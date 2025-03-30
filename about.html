@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HMPSM UNPAR - About</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-900">
+  <!-- Header -->
+  <div id="header"></div>
+
+  <!-- About Section -->
+  <section class="py-20 bg-primary">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h1 class="text-4xl font-bold text-text-primary mb-4">About HMPSM UNPAR</h1>
+        <p class="text-text-secondary max-w-2xl mx-auto">
+          Our department's journey through excellence in mathematics and natural sciences education
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+        <div>
+          <h2 class="text-2xl font-semibold mb-4 text-text-primary">Our History</h2>
+          <p class="text-text-secondary mb-6">
+            Established in 1960, the Department of Mathematics and Natural Sciences at Parahyangan Catholic University 
+            has been a center of excellence in scientific education and research in Indonesia.
+          </p>
+          <p class="text-text-secondary">
+            Over the years, we have produced thousands of graduates who have made significant contributions 
+            in various scientific fields both nationally and internationally.
+          </p>
+        </div>
+        <div class="card overflow-hidden p-0">
+          <img src="https://images.pexels.com/photos/159775/library-la-trobe-study-students-159775.jpeg" 
+               alt="University Library" 
+               class="w-full h-64 object-cover">
+        </div>
+      </div>
+
+      <div class="mb-20">
+        <div class="text-center mb-12">
+          <h2 class="text-2xl font-semibold text-text-primary mb-4">Our Vision & Mission</h2>
+          <p class="text-text-secondary max-w-2xl mx-auto">
+            Guiding principles that shape our academic community
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="card">
+            <h3 class="text-xl font-semibold mb-4 text-accent">Vision</h3>
+            <p class="text-text-secondary">
+              To become a leading center for mathematics and natural sciences education that produces competent, 
+              innovative, and ethical graduates who contribute to society.
+            </p>
+          </div>
+          <div class="card">
+            <h3 class="text-xl font-semibold mb-4 text-accent">Mission</h3>
+            <ul class="text-text-secondary list-disc pl-5 space-y-2">
+              <li>Provide high-quality education in mathematics and natural sciences</li>
+              <li>Conduct innovative and impactful research</li>
+              <li>Serve the community through scientific applications</li>
+              <li>Develop international collaborations</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="text-center mb-12">
+          <h2 class="text-2xl font-semibold text-text-primary mb-4">Our Team</h2>
+          <p class="text-text-secondary max-w-2xl mx-auto">
+            Meet our distinguished faculty members
+          </p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Faculty Member 1 -->
+          <div class="card p-0 overflow-hidden">
+            <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg" 
+                 alt="Faculty Member" 
+                 class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="font-semibold text-lg text-text-primary">Prof. John Doe, Ph.D</h3>
+              <p class="text-accent mb-2">Head of Department</p>
+              <p class="text-text-secondary text-sm">Mathematics</p>
+            </div>
+          </div>
+          
+          <!-- Faculty Member 2 -->
+          <div class="bg-gray-800 rounded-lg overflow-hidden">
+            <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg" 
+                 alt="Faculty Member" 
+                 class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="font-semibold text-lg">Dr. Jane Smith</h3>
+              <p class="text-purple-500 mb-2">Professor</p>
+              <p class="text-gray-400 text-sm">Physics</p>
+            </div>
+          </div>
+          
+          <!-- Faculty Member 3 -->
+          <div class="bg-gray-800 rounded-lg overflow-hidden">
+            <img src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg" 
+                 alt="Faculty Member" 
+                 class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="font-semibold text-lg">Dr. Michael Johnson</h3>
+              <p class="text-purple-500 mb-2">Associate Professor</p>
+              <p class="text-gray-400 text-sm">Chemistry</p>
+            </div>
+          </div>
+          
+          <!-- Faculty Member 4 -->
+          <div class="bg-gray-800 rounded-lg overflow-hidden">
+            <img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg" 
+                 alt="Faculty Member" 
+                 class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h3 class="font-semibold text-lg">Dr. Sarah Williams</h3>
+              <p class="text-purple-500 mb-2">Assistant Professor</p>
+              <p class="text-gray-400 text-sm">Biology</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+  <script>
+    // Load header and footer
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('header').innerHTML = data);
+      
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('footer').innerHTML = data);
+  </script>
+</body>
+</html>
