@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HMPSM UNPAR - Contact</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-900">
+  <!-- Header -->
+  <div id="header"></div>
+
+  <!-- Contact Section -->
+  <section class="py-20">
+    <div class="container mx-auto px-6">
+      <h1 class="text-4xl font-bold mb-12 text-center">Contact Us</h1>
+      
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <!-- Contact Information -->
+        <div>
+          <h2 class="text-2xl font-semibold mb-6">Get In Touch</h2>
+          
+          <div class="space-y-6">
+            <div class="flex items-start">
+              <div class="text-purple-500 text-xl mr-4 mt-1">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <h3 class="text-lg font-medium mb-1">Address</h3>
+                <p class="text-gray-400">
+                  Department of Mathematics and Natural Sciences<br>
+                  Parahyangan Catholic University<br>
+                  Jl. Ciumbuleuit 94, Bandung 40141<br>
+                  West Java, Indonesia
+                </p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="text-purple-500 text-xl mr-4 mt-1">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div>
+                <h3 class="text-lg font-medium mb-1">Phone</h3>
+                <p class="text-gray-400">
+                  +62 22 123 4567 (Administration)<br>
+                  +62 22 123 4568 (Admissions)
+                </p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="text-purple-500 text-xl mr-4 mt-1">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <h3 class="text-lg font-medium mb-1">Email</h3>
+                <p class="text-gray-400">
+                  <a href="mailto:hmpsm@unpar.ac.id" class="hover:text-purple-400 transition">hmpsm@unpar.ac.id</a> (General)<br>
+                  <a href="mailto:admissions@hmpsm.unpar.ac.id" class="hover:text-purple-400 transition">admissions@hmpsm.unpar.ac.id</a> (Admissions)
+                </p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="text-purple-500 text-xl mr-4 mt-1">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div>
+                <h3 class="text-lg font-medium mb-1">Office Hours</h3>
+                <p class="text-gray-400">
+                  Monday - Friday: 8:00 AM - 4:00 PM<br>
+                  Saturday: 8:00 AM - 12:00 PM<br>
+                  Sunday: Closed
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mt-8">
+            <h3 class="text-lg font-medium mb-4">Follow Us</h3>
+            <div class="flex space-x-4">
+              <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:text-white hover:bg-purple-600 transition">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:text-white hover:bg-purple-600 transition">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:text-white hover:bg-purple-600 transition">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:text-white hover:bg-purple-600 transition">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:text-white hover:bg-purple-600 transition">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Contact Form -->
+        <div>
+          <h2 class="text-2xl font-semibold mb-6">Send Us a Message</h2>
+          <form class="bg-gray-800 p-8 rounded-lg">
+            <div class="mb-6">
+              <label for="name" class="block text-gray-400 mb-2">Full Name *</label>
+              <input type="text" id="name" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500" required>
+            </div>
+            <div class="mb-6">
+              <label for="email" class="block text-gray-400 mb-2">Email Address *</label>
+              <input type="email" id="email" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500" required>
+            </div>
+            <div class="mb-6">
+              <label for="subject" class="block text-gray-400 mb-2">Subject *</label>
+              <select id="subject" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500" required>
+                <option value="">Select a subject</option>
+                <option value="general">General Inquiry</option>
+                <option value="admissions">Admissions</option>
+                <option value="research">Research Collaboration</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="mb-6">
+              <label for="message" class="block text-gray-400 mb-2">Message *</label>
+              <textarea id="message" rows="5" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500" required></textarea>
+            </div>
+            <div class="mb-6">
+              <div class="g-recaptcha" data-sitekey="your-site-key"></div>
+            </div>
+            <button type="submit" class="w-full bg-purple-600 hover:bg-purple-700 text-white font-medium py-3 px-6 rounded-lg transition">Send Message</button>
+          </form>
+        </div>
+      </div>
+      
+      <!-- Map -->
+      <div class="mt-20">
+        <h2 class="text-2xl font-semibold mb-6 text-center">Our Location</h2>
+        <div class="bg-gray-800 rounded-lg overflow-hidden">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.923197179338!2d107.6084903153169!3d-6.893895195019432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e64a1e6a1e3f%3A0x7e3b1a3e3b3b3b3b!2sParahyangan%20Catholic%20University!5e0!3m2!1sen!2sid!4v1620000000000!5m2!1sen!2sid" 
+            width="100%" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy"
+            class="opacity-90 hover:opacity-100 transition">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+  <script>
+    // Load header and footer
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('header').innerHTML = data);
+      
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('footer').innerHTML = data);
+  </script>
+</body>
+</html>
